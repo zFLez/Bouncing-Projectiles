@@ -25,7 +25,7 @@ public class ProjectilesBounceMixin {
 
         BounceFunctions.bounce(projectile, blockHit);
 
-        ci.cancel(); // stop normal collision
+        ci.cancel();
     }
 
     @Inject(method = "hitTargetOrDeflectSelf", at = @At("HEAD"), cancellable = true)
