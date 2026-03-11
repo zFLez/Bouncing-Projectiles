@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "bouncing-projectilespbosb-for-fabric",
+	"version": "${version}",
+	"name": "Bouncing Projectiles(PBOSB for fabric)",
+	"description": "Projectiles now bounce on slime blocks!",
+	"authors": [
+		"FLez"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bouncing-projectilespbosb-for-fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.flez.bouncingprojectiles.BouncingProjectilesPBOSBForFabric"
+		],
+		"fabric-datagen": [
+			"net.flez.bouncingprojectiles.BouncingProjectilesPBOSBForFabricDataGenerator"
+		]
+	},
+	"mixins": [
+		"bouncing-projectilespbosb-for-fabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

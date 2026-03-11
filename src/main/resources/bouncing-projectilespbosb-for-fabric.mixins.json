@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.flez.bouncingprojectiles.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "ProjectilesBounceMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
