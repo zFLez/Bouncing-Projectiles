@@ -16,7 +16,7 @@ public class BounceFunctions {
         }
 
         double offset = (projectile.getBbWidth() * 0.5) + 0.05;
-        Vec3 normal = hitResult.getDirection().getUnitVec3();
+        Vec3 normal = Vec3.atLowerCornerOf(hitResult.getDirection().getNormal());
         projectile.setPos(hitResult.getLocation().add(normal.scale(offset)));
 
         projectile.setDeltaMovement(v);
