@@ -1,7 +1,7 @@
 package net.flez.bouncingprojectiles.util;
 
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
@@ -20,7 +20,7 @@ public class BounceFunctions {
         projectile.setPos(hitResult.getLocation().add(normal.scale(offset)));
 
         projectile.setDeltaMovement(v);
-        projectile.hasImpulse = true;
+        projectile.needsSync = true;
         projectile.setOnGround(false);
 
         if (projectile instanceof AbstractArrow arrow) {
